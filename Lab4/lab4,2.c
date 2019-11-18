@@ -28,5 +28,5 @@ void main(){
 	 }
 	printf("\nРазличных элеметов в массиве %d",z);
 }
-else printf("Ошибка");
+else printf("Их нет");
 }
