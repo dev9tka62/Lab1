@@ -1,39 +1,19 @@
-#include<stdio.h>
-void main()
-{
-int n, a,b,c,t=5,y=3,u=1;
-while(1) {
-printf("meny:\n");
-printf("1 – skol`ko 5p\n ");
-printf("2 – skol`ko 3p\n ");
-printf("3 – skol`ko 1p\n ");
-printf("4 – vixod is programmi\n ");
-printf("vash vibor?:");
-scanf("%d", &n);
-switch (n)
-{
-case 1:
-printf("vvedite skol`ko rybley:\n ");
-scanf("%d", &a);
-if(a>50) printf ("Vvedite znachenie <50\n");
-else if(a<50) printf("P9tiryblevix: %d\n ", a/t);
-break;
-case 2: 
-printf("vvedite skol`ko rybley:\n ");
-scanf("%d", &b);
-if(b>50)printf ("Vvedite znachenie <50\n");
-else if(a<50) printf("Trexryblevix: %d\n ", b/y);
-break;
-case 3: 
-printf("vvedite skol`ko rybley:\n");
-scanf("%d",&c);
-if(c>50) printf ("Vvedite znachenie <50\n");
-else if(a<50) printf("Odnoryblevix:%d\n", c/u);
-break;
-if((a/t) || (b/y) || (c/u) >=10) printf("Nel`z9 razmen9t`");
-case 4:
-return; break;
-default: printf("Nevernoe zna4enie\n");
-}
-}
+#include <stdio.h>
+#include <locale.h>
+
+void main(){
+setlocale(LC_ALL,"RUSSIAN");
+int m, s, a, b, c;
+printf("Введите сумму руб. 10<m<50 m = ");
+scanf("%d", &m);
+	 for(a=0;a<=10 && s<m;a=a+1){
+	 	for(b=0; b<=10-a&&s<m; b++){
+	 		for(c=0; c<=10-a-b && s<m; c++){
+	 			s=5*a+3*b+c;
+			 }
+		 }
+		}
+if( s==m && a+b+c-3==10)
+printf("\nМожно пятируб =%d трехруб =%d руб =%d s=%d",a-1,b-1,c-1,s);
+else printf("\nНельзя");
 }
