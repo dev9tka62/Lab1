@@ -5,11 +5,11 @@
 void main(){
 	setlocale(LC_ALL,"RUSSIAN");
 	int k, i, b, c, x, n,z;
-	printf("Введите число элементов массива k=");
+	printf("Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЌР»РµРјРµРЅС‚РѕРІ k=");
 	scanf("%d",&k);
 	if(k>0){
 	int a[k];
-	printf("Введите число n = ");
+	printf("РќР° СЃРєРѕР»СЊРєРѕ СЃРґРІРёРЅСѓС‚СЊ n = ");
 	scanf("%d",&n);
 	if(n<=k && n>0){
 	for(i=0; i<k; i++) {   
@@ -28,7 +28,7 @@ void main(){
 		printf(" a[%d]=%d",b,a[b]);
 	}
 }
-else printf("\nОшибка");
+else printf("\nГЋГёГЁГЎГЄГ ");
 }
-else printf("\nОшибка");
+else printf("\nГЋГёГЁГЎГЄГ ");
 }
