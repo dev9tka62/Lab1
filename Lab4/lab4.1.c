@@ -28,7 +28,7 @@ void main(){
 		printf(" a[%d]=%d",b,a[b]);
 	}
 }
-else printf("\nÎøèáêà");
+else printf("\nОшибка");
 }
-else printf("\nÎøèáêà");
+else printf("\nОшибка");
 }
